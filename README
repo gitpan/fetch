@@ -1,6 +1,6 @@
 fetch is a simple biological sequence retrieval utility.
 
- It works with SWISSPROT (seq.dat) and any FASTA format DB.
+ It works with SWISSPROT (seq.dat).
 
  The homepage of it is:
 
@@ -11,9 +11,7 @@ fetch is a simple biological sequence retrieval utility.
    http://www.mrc-cpe.cam.ac.uk/jong/fetch_home.html
 
 
-18/10/96
-
-GNU lincense.
+16/10/96
 
 Alex Bateman, Bissan, Jong Park, Astrid Reinhardt, Sarah Teichmann
 

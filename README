@@ -1,17 +1,38 @@
-fetch is a simple biological sequence retrieval utility.
+#______________________________________________________________
+# Title     : fetch.pl
+# Usage     : fetch.pl SWISS_ENTRY
+#
+# Function  : fetches swissprot entry or fasta format seq with
+#             given seq name(like  SAA_HORSE, SA*HORSE, SAA,..)
+#             you can give multi files(SAA*, SAU*) at the same
+#             time. This uses ENV setting of 'SWDIR'.
+#             If you already know where you put seq.dat you can
+#             specify in the prompt.  jong@mrc-lmb.cam.ac.uk
+#
+# Example   :  fetch.pl YAPT, fetch.pl *YEAST
+#
+# Keywords  : fetch_swissprot_sequence, fetch_sequence,
+#             find_swiss_sequence, find_sequence
+#
+# Options   : _  for debugging.
+#             #  for debugging.
+#             -f for fasta format file output
+#             -a is for ALL matched seq. (same as using glob=> *YEAST)
+#             -c is for Creating seq.idx file
+#             -h is for HELP!
+#             -g is for GDF file format output
+#             -l is for list of match entries(in 1 column)
+#             -s is for species option (input name mst be species (YEAST, RAT, HUMAN..)
+#             n= is for Number of seq you want to get from swissprot
+#             s= is for Size limit. Min seq size in swiss, s=10  -> minimum 11 aa seq.
+#             S= is for Size limit. Max seq size in swiss, s=1000 -> get less than 1000
+#
+# Returns   : STDOUT
+# Argument  : swissprot seqname
+# Version   : 1.6
+#--------------------------------------------------------------
 
- It works with SWISSPROT (seq.dat).
 
- The homepage of it is:
+ftp site:  ftp.mrc-lmb.cam.ac.uk /pub/genomes/Software/Fetch
 
- http://sonja.acad.cai.cam.ac.uk/fetch_home.html
-
- if it does not work try:
-
-   http://www.mrc-cpe.cam.ac.uk/jong/fetch_home.html
-
-
-16/10/96
-
-Alex Bateman, Bissan, Jong Park, Astrid Reinhardt, Sarah Teichmann
 
